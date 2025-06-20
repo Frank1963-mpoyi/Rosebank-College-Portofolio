@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Enhanced web functionality with JavaScript, SEO optimization, and form validation">
+    <meta name="keywords" content="web development, JavaScript, SEO, form validation, gallery">
+    <title>Home Page | Portofolio Project</title>
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portofolio</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact_us.html">Contact</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="products_and_services.html">Product and Service</a></li>
+                    <li><a href="about_us.html">About</a></li>
+                    <li><a href="implementation.html">Implementation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Web Enhancement Implementation</h1>
+        <p>Part 3: JavaScript Functionality, SEO Optimization & Form Validation</p>
+        <a href="#features" class="btn">Explore Features</a>
+    </section>
+
+
+    <!-- Accordion Section -->
+    <section id="accordion" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Interactive Accordion</h2>
+                <p>Click on headers to expand/collapse content</p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>What is JavaScript Enhancement?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>JavaScript enhancement refers to adding interactive elements to a website to improve user
+                            experience. This includes features like accordions, tabs, modals, image galleries, form
+                            validation, and dynamic content updates without requiring full page reloads.</p>
+                        <p>These enhancements make websites more engaging, intuitive, and functional for users while
+                            maintaining accessibility and performance.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Why is SEO important?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Search Engine Optimization (SEO) is crucial for improving a website's visibility in search
+                            engine results. Proper SEO implementation helps:</p>
+                        <ul>
+                            <li>Increase organic traffic to your website</li>
+                            <li>Improve user experience and engagement</li>
+                            <li>Build credibility and trust with your audience</li>
+                            <li>Gain a competitive advantage in your industry</li>
+                            <li>Provide better ROI compared to paid advertising</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>What are the benefits of form validation?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Form validation provides several important benefits:</p>
+                        <ul>
+                            <li><strong>Improved data quality:</strong> Ensures that submitted data meets required
+                                formats and standards</li>
+                            <li><strong>Enhanced user experience:</strong> Provides immediate feedback to users about
+                                errors</li>
+                            <li><strong>Reduced server load:</strong> Prevents invalid submissions from reaching the
+                                server</li>
+                            <li><strong>Increased security:</strong> Helps prevent malicious data from being submitted
+                            </li>
+                            <li><strong>Higher conversion rates:</strong> Makes forms easier to complete correctly</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section id="tabs">
+        <div class="container">
+            <div class="section-title">
+                <h2>Interactive Tabs</h2>
+                <p>Switch between different content sections</p>
+            </div>
+
+            <div class="tabs">
+                <div class="tab-header">
+                    <button class="tab-btn active" data-tab="tab1">HTML5</button>
+                    <button class="tab-btn" data-tab="tab2">CSS3</button>
+                    <button class="tab-btn" data-tab="tab3">JavaScript</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <h3>HTML5 Semantic Elements</h3>
+                        <p>HTML5 introduced semantic elements that clearly define different parts of a web page:</p>
+                        <ul>
+                            <li><code>&lt;header&gt;</code> - Defines a header for a document or section</li>
+                            <li><code>&lt;nav&gt;</code> - Defines navigation links</li>
+                            <li><code>&lt;section&gt;</code> - Defines a section in a document</li>
+                            <li><code>&lt;article&gt;</code> - Defines independent, self-contained content</li>
+                            <li><code>&lt;footer&gt;</code> - Defines a footer for a document or section</li>
+                        </ul>
+                        <p>Using semantic elements improves SEO by helping search engines understand the structure of
+                            your content <a href="#references">[1]</a>.</p>
+                    </div>
+
+                    <div class="tab-pane" id="tab2">
+                        <h3>CSS3 Features</h3>
+                        <p>CSS3 introduced many powerful features for styling web pages:</p>
+                        <ul>
+                            <li><strong>Flexbox:</strong> One-dimensional layout model for arranging items in rows or
+                                columns</li>
+                            <li><strong>Grid:</strong> Two-dimensional layout system for complex web designs</li>
+                            <li><strong>Animations & Transitions:</strong> Create smooth animations and state
+                                transitions</li>
+                            <li><strong>Media Queries:</strong> Essential for responsive web design</li>
+                            <li><strong>Custom Properties (CSS Variables):</strong> Reusable values throughout your
+                                stylesheets</li>
+                        </ul>
+                        <p>These features allow for more complex layouts and designs without relying on JavaScript <a
+                                href="#references">[2]</a>.</p>
+                    </div>
+
+                    <div class="tab-pane" id="tab3">
+                        <h3>Modern JavaScript</h3>
+                        <p>JavaScript has evolved significantly with ES6+ features:</p>
+                        <ul>
+                            <li><strong>Arrow Functions:</strong> Shorter function syntax with lexical 'this' binding
+                            </li>
+                            <li><strong>Promises & Async/Await:</strong> Better asynchronous programming patterns</li>
+                            <li><strong>Classes:</strong> Syntactic sugar over JavaScript's prototype-based inheritance
+                            </li>
+                            <li><strong>Modules:</strong> Native support for modular code organization</li>
+                            <li><strong>Destructuring:</strong> Extract data from arrays or objects into distinct
+                                variables</li>
+                        </ul>
+                        <p>Modern JavaScript makes code more readable, maintainable, and efficient <a
+                                href="#references">[3]</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img src="" alt="Lightbox image">
+        </div>
+    </div>
+
+    <!-- Search Section -->
+    <section id="search">
+        <div class="container">
+            <div class="section-title">
+                <h2>Dynamic Search Functionality</h2>
+                <p>Search and filter content in real-time</p>
+            </div>
+
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for services or products...">
+                <button class="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+
+            <div class="search-results">
+                <div class="result-item">
+                    <h3>Web Design Service</h3>
+                    <p>Professional website design with responsive layouts and modern UI/UX principles.</p>
+                    <p class="category">Category: Services</p>
+                </div>
+                <div class="result-item">
+                    <h3>SEO Optimization Package</h3>
+                    <p>Comprehensive SEO services to improve your website's search engine rankings.</p>
+                    <p class="category">Category: Products</p>
+                </div>
+                <div class="result-item">
+                    <h3>JavaScript Development</h3>
+                    <p>Custom JavaScript solutions for interactive web applications.</p>
+                    <p class="category">Category: Services</p>
+                </div>
+                <div class="result-item">
+                    <h3>E-commerce Platform</h3>
+                    <p>Complete online store solution with payment integration.</p>
+                    <p class="category">Category: Products</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- References Section -->
+    <section id="references" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="references">
+                <h2>References</h2>
+                <ul>
+                    <li id="ref1">[1] Mozilla Developer Network. (2023). HTML5 Semantic Elements. Retrieved from <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Semantic_elements"
+                            target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Semantic_elements</a>
+                    </li>
+                    <li id="ref2">[2] W3Schools. (2023). CSS3 Tutorial. Retrieved from <a
+                            href="https://www.w3schools.com/css/" target="_blank">https://www.w3schools.com/css/</a>
+                    </li>
+                    <li id="ref3">[3] ECMA International. (2023). ECMAScript® 2023 Language Specification. Retrieved
+                        from <a href="https://262.ecma-international.org/"
+                            target="_blank">https://262.ecma-international.org/</a></li>
+                    <li id="ref4">[4] jQuery Foundation. (2023). jQuery API Documentation. Retrieved from <a
+                            href="https://api.jquery.com/" target="_blank">https://api.jquery.com/</a></li>
+                    <li id="ref5">[5] Google Developers. (2023). SEO Fundamentals. Retrieved from <a
+                            href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+                            target="_blank">https://developers.google.com/search/docs/fundamentals/seo-starter-guide</a>
+                    </li>
+                    <li id="ref6">[6] WebAIM. (2023). Web Accessibility Principles. Retrieved from <a
+                            href="https://webaim.org/resources/" target="_blank">https://webaim.org/resources/</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Timestamp -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Portofolio</h3>
+                    <p>Providing cutting-edge web solutions with a focus on user experience, performance, and SEO best
+                        practices.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
+                        <li><a href="#accordion"><i class="fas fa-chevron-right"></i> Accordion</a></li>
+                        <li><a href="#tabs"><i class="fas fa-chevron-right"></i> Tabs</a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="#search"><i class="fas fa-chevron-right"></i> Search</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Loubser street , Brackenfell</li>
+                        <li><i class="fas fa-phone"></i> +27 (78) 111-4041</li>
+                        <li><i class="fas fa-envelope"></i> mpoyitshibuyi63@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mpoyi Tshibuyi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Timestamp Section -->
+    <div class="timestamp">
+        <span id="current-date">Current Date: </span>
+        <span id="live-timestamp"> | Live Timestamp: </span>
+    </div>
+
+    <!-- Modal for Form Submission -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3>Form Submitted Successfully!</h3>
+            <p>Thank you for your enquiry. We'll get back to you within 24-48 hours.</p>
+            <p>A confirmation email has been sent to your provided email address.</p>
+            <button class="btn" id="modal-close-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
