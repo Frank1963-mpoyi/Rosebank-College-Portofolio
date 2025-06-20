@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Enhanced web functionality with JavaScript, SEO optimization, and form validation">
-    <meta name="keywords" content="web development, JavaScript, SEO, form validation, gallery">
-    <title>About Page | Portofolio Project</title>
+    <meta name="description" content="Learn about WebEnhance - our mission, values, team, and history">
+    <meta name="keywords" content="about us, company history, web development team, company values">
+    <title>About Us | Portofolio Project</title>
 
-    <!-- Ajax CDN -->
+    <!-- Font awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Jquery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-    <link rel="stylesheet" href="assets/css/style.css">
-
+   
+    <link rel="stylesheet" href="assets/css/about.css">
 </head>
-
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <nav>
+             <nav>
                 <div class="logo">Portofolio</div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -40,23 +35,44 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <h1>Web Enhancement Implementation</h1>
-        <p>Part 3: JavaScript Functionality, SEO Optimization & Form Validation</p>
-        <a href="#features" class="btn">Explore Features</a>
+    <section class="about-hero">
+        <h1>About WebEnhance</h1>
+        <p>Learn about our mission, values, and the team behind our success</p>
+        <a href="#about" class="btn">About us</a>
     </section>
 
-    <!-- About Us Section -->
+    <!-- Mission Section -->
+    <section class="mission-section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Mission & Vision</h2>
+                <p>Driving innovation in web development</p>
+            </div>
+            
+            <div class="mission-content">
+                <div class="mission-text">
+                    <h3>Empowering Businesses Through Technology</h3>
+                    <p>At WebEnhance, our mission is to empower businesses of all sizes by creating exceptional digital experiences that drive growth and innovation. We believe in the transformative power of well-crafted web solutions to elevate brands and connect with audiences in meaningful ways.</p>
+                    <p>Since our founding in 2015, we've been dedicated to pushing the boundaries of what's possible on the web. Our team of passionate developers, designers, and strategists work together to deliver solutions that not only meet but exceed our clients' expectations.</p>
+                    <p>We envision a digital landscape where technology enhances human connections and simplifies complex challenges. By staying at the forefront of web technologies and design trends, we help our clients navigate the ever-evolving digital world with confidence.</p>
+                </div>
+                <div class="mission-image">
+                    <img src="assets/images/gallery/about.avif" alt="about picture">
+                </div>
+            </div>
+        </div>
+    </section>
 
-
+ 
+ 
+ 
     <!-- Footer with Timestamp -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Portofolio</h3>
-                    <p>Providing cutting-edge web solutions with a focus on user experience, performance, and SEO best
-                        practices.</p>
+                    <p>Providing cutting-edge web solutions with a focus on user experience, performance, and SEO best practices.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -64,53 +80,40 @@
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-
+                
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
-                        <li><a href="#accordion"><i class="fas fa-chevron-right"></i> Accordion</a></li>
-                        <li><a href="#tabs"><i class="fas fa-chevron-right"></i> Tabs</a></li>
-                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
-                        <li><a href="#search"><i class="fas fa-chevron-right"></i> Search</a></li>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="portfolio.html"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
                     </ul>
                 </div>
-
+                
                 <div class="footer-column">
                     <h3>Contact Us</h3>
                     <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> Loubser street , Brackenfell</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Loubser Street, Brackenfell</li>
                         <li><i class="fas fa-phone"></i> +27 (78) 111-4041</li>
                         <li><i class="fas fa-envelope"></i> mpoyitshibuyi63@gmail.com</li>
                     </ul>
                 </div>
             </div>
-
+            
             <div class="footer-bottom">
                 <p>&copy; 2025 Mpoyi Tshibuyi. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
+    
     <!-- Timestamp Section -->
     <div class="timestamp">
         <span id="current-date">Current Date: </span>
         <span id="live-timestamp"> | Live Timestamp: </span>
     </div>
-
-    <!-- Modal for Form Submission -->
-    <div class="modal" id="success-modal">
-        <div class="modal-content">
-            <span class="modal-close">&times;</span>
-            <h3>Form Submitted Successfully!</h3>
-            <p>Thank you for your enquiry. We'll get back to you within 24-48 hours.</p>
-            <p>A confirmation email has been sent to your provided email address.</p>
-            <button class="btn" id="modal-close-btn">Close</button>
-        </div>
-    </div>
-
-    <script src="assets/js/main.js"></script>
-
+    
+ <script src="assets/js/about.js"></script>
 </body>
-
 </html>

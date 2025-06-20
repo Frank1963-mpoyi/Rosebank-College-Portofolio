@@ -1,0 +1,234 @@
+ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #4361ee, #3a0ca3);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .intro {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #e6e6ff;
+        }
+        
+        .section {
+            padding: 3rem 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section-title {
+            color: #4361ee;
+            margin-bottom: 2rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 3px solid #4895ef;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .section-title i {
+            background: #4361ee;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .code-container {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow: auto;
+            font-family: 'Fira Code', 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        
+        .code-header {
+            background: #1a202c;
+            padding: 0.5rem 1rem;
+            border-radius: 5px 5px 0 0;
+            margin: -1.5rem -1.5rem 1rem -1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .code-title {
+            font-weight: 600;
+            color: #63b3ed;
+        }
+        
+        .code-language {
+            color: #a0aec0;
+            font-size: 0.85rem;
+        }
+        
+        .screenshot-container {
+            background: #f8f9fa;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            height: 400px;
+        }
+        
+        .screenshot {
+            width: 760px;
+            height: 400px;
+            border-radius: 6px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .screenshot:hover {
+            transform: scale(1.02);
+        }
+        
+        .feature-description {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(to right, #f0f7ff, #e6eeff);
+            border-radius: 8px;
+            border-left: 4px solid #4361ee;
+            box-shadow: 0 4px 8px rgba(67, 97, 238, 0.1);
+        }
+        
+        .feature-description h4 {
+            margin-bottom: 0.8rem;
+            color: #3a0ca3;
+            font-size: 1.3rem;
+        }
+        
+        .feature-description ul {
+            padding-left: 1.5rem;
+            margin-top: 0.8rem;
+        }
+        
+        .feature-description li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        
+        .reference-section {
+            background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+            padding: 3rem 2rem;
+            border-radius: 0 0 15px 15px;
+        }
+        
+        .reference-list {
+            list-style-type: none;
+            padding-left: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .reference-list li {
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .reference-list li:before {
+            content: "•";
+            color: #4361ee;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+            top: -0.3rem;
+        }
+        
+        .note {
+            background: #fff9db;
+            border-left: 4px solid #ffd43b;
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-top: 2rem;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        
+        .note strong {
+            color: #d97706;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #1a202c;
+            color: #a0aec0;
+            border-radius: 0 0 15px 15px;
+        }
+        
+        @media (max-width: 900px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .screenshot-container {
+                height: auto;
+                min-height: 300px;
+            }
+            
+            .screenshot {
+                width: 100%;
+                height: auto;
+                max-height: 400px;
+            }
+        }
+    
